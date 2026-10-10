@@ -16,7 +16,7 @@ class RedSocial:
     Constructor alternativo:
         desde_json
 
-    Métodos especiale:
+    Métodos especiales:
         __len__, __iter__, __contains__, __getitem__
     """
 
@@ -125,7 +125,7 @@ class RedSocial:
 
         print(f"\nTimeline de {usuario}:")
         for publicacion in self.timeline(usuario):
-            print(f"    {publicacion}   ♥ {publicacion.me_gusta}")
+            print(f"  {publicacion}  ♥ {publicacion.me_gusta}")
 
     def __len__(self) -> int:
         """Método especial de RedSocial que nos devuelve la len del
@@ -135,7 +135,7 @@ class RedSocial:
 
     def __iter__(self):
         """Método especial de RedSocial que indica que recorre al hacer
-        un for sobre la red: Los usuarios ordenador por alias."""
+        un for sobre la red: Los usuarios ordenados por alias."""
 
         return iter([self.usuarios[alias] for alias in sorted(self.usuarios)])
 

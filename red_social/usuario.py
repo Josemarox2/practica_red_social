@@ -54,7 +54,7 @@ class Usuario:
         else:
             self.seguidos.append(otro)
 
-    def sigue_a(self, otro: str) -> bool:
+    def sigue_a(self, otro) -> bool:
         """Método de la clase Usuario. Devuelve un boolean para saber
         si el usuario indicado está siendo seguido.
 
@@ -84,7 +84,7 @@ class Usuario:
         usuario a partir de un diccionario.
 
         Args:
-            datos: Diccionario con las keys 'nombres' y 'alias'
+            datos: Diccionario con las keys 'nombre' y 'alias'
         """
 
         return cls(datos["nombre"], datos["alias"])

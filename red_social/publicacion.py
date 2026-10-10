@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 LIMITE_CARACTERES = 280
 
 # Signos para quitar la puntuación final del hashtag
-PUNTUACION_FINAL = ",.;:!?!¿"
+PUNTUACION_FINAL = ",.;:!?¡¿"
 
 
 class Publicacion(ABC):
